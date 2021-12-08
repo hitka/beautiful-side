@@ -36,10 +36,6 @@
         trackLinks:true,
         accurateTrackBounce:true
    });
-$(document).ready(function(){
-    $("#selector").change(function(){
-        $("#iframeId").attr("src", $(this).val());
-    });
 });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/55512271" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -52,8 +48,15 @@ $(document).ready(function(){
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" type="text/css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-git.min.js"></script>
    <!-- V1K W1idget --><script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script><!-- V1K W1idget -->
+	<script type=text/javascript >
+	$(document).ready(function(){
+    		$("#selector").change(function(){
+        		$("#iframeId").attr("src", $(this).val());
+    	});
+	</script>
 </head>
 <body>
 
