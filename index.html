@@ -62,21 +62,20 @@
     <p class="page-header__logotext logotext">WELCOME TO THE CUM ZONE</p>
 </header>
 <div class="page-content main_choose">
- <select id="selector">
+ <select onchange="one(this.value)">
     <option value="https://streamtape.com/e/4xZGqD24OeiKbWq/">S4 01 | Crunchyroll SUB [Blu-Ray]</option>
-    <option value="https://www.mp4upload.com/embed-k0k4go02lf2w.html">S4 02 | Crunchyroll SUB [Blu-Ray]</option>
-    <option value="https://streamtape.com/e/4xZGqD24OeiKbWq/">S4 03 | Crunchyroll SUB [Blu-Ray]</option>
-    <option value="https://www.mp4upload.com/embed-k0k4go02lf2w.html">S4 04 | Crunchyroll SUB [Blu-Ray]</option>
+    <option value="https://streamtape.com/e/pDMBwBBjzKirebR/">S4 02 | Crunchyroll SUB [Blu-Ray]</option>
+    <option value="https://streamtape.com/e/Lq94za4ayGhRKzl/">S4 03 | Crunchyroll SUB [Blu-Ray]</option>
+    <option value="https://streamtape.com/e/JWDvwkQJdAtj0pz/">S4 04 | Crunchyroll SUB [Blu-Ray]</option>
 </select>
 </div>
 <div class="page-content main_container">
 <iframe src="https://www.mp4upload.com/embed-k0k4go02lf2w.html" id="video" align="middle" width="1280" height="720" allowfullscreen="" allowtransparency="" allow="autoplay" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 </div>
 <script>
-$(document).ready(function(){
-    	$("#selector").change(function(){
-        	$("#video").attr("src", $(this).val());
-    	});
+function one(m_param){
+  document.getElementById("video").src = m_param;
+}
 </script>
 <div id="page-body" class="page-body__container">
 </div>
