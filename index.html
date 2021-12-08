@@ -36,6 +36,11 @@
         trackLinks:true,
         accurateTrackBounce:true
    });
+$(document).ready(function(){
+    $("#selector").change(function(){
+        $("#iframeId").attr("src", $(this).val());
+    });
+});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/55512271" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
