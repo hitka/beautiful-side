@@ -1,4 +1,4 @@
-<?php
+
 if(isset($_GET['query']))
 {
     $strQuery = strtolower(trim(urldecode($_GET['query'])));
@@ -14,4 +14,3 @@ if(isset($_GET['query']))
 		break;
 	}
 }
-?>
